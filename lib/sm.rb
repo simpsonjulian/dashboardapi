@@ -23,7 +23,7 @@ module SM
   #   original request. Additional parameters passed in with the batchToken will be ignored.
   # @return [Array] array of hashes containing device information for matching devices in the network
   def list_sm_devices_in_network(network_id, options)
-    self.make_api_call("/networks/#{network_id}/sm/devices", 'GET')
+    self.make_api_call("/networks/#{network_id}/sm/devices", 'GET', options)
   end
 
 end
