@@ -22,6 +22,7 @@ class DashboardAPI
   include Networks
   include Clients
   include Devices
+  include SM
   include SSIDs
   include Admins
   include Switchports
